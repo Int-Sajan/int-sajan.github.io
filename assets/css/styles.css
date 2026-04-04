@@ -581,23 +581,74 @@ figure {
 }
 
 .site-footer {
+    margin-top: 2rem;
     padding: 0 0 2rem;
+    background: linear-gradient(180deg, rgba(20, 28, 26, 0.96), rgba(14, 20, 19, 0.98));
+    color: rgba(255, 251, 245, 0.9);
 }
 
-.footer-row {
-    padding-top: 1.75rem;
-    padding-bottom: 0.85rem;
-    border-top: 1px solid rgba(22, 24, 22, 0.08);
-    font-size: 0.94rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+.site-footer a,
+.site-footer span,
+.site-footer p {
+    color: inherit;
+}
+
+.footer-shell {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 0.9fr;
+    gap: 2rem;
+    padding-top: 2.3rem;
+    padding-bottom: 1.6rem;
+}
+
+.footer-brand-block,
+.footer-block {
+    display: grid;
+    align-content: start;
+    gap: 0.65rem;
+}
+
+.footer-title,
+.footer-heading {
+    margin-bottom: 0.15rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 251, 245, 0.62);
+}
+
+.footer-brand-block p:last-child,
+.footer-block span,
+.footer-block a {
+    font-size: 0.96rem;
+    color: rgba(255, 251, 245, 0.88);
+}
+
+.footer-block a,
+.footer-credit a {
+    transition: color 0.2s ease;
+}
+
+.footer-block a:hover,
+.footer-credit a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 251, 245, 0.12);
+    font-size: 0.84rem;
+    color: rgba(255, 251, 245, 0.62);
 }
 
 .footer-credit {
-    width: var(--container);
-    margin: 0 auto;
-    text-align: center;
-    font-size: 0.84rem;
-    color: var(--muted);
+    margin: 0;
+    text-align: right;
 }
 
 .reveal,
@@ -682,6 +733,10 @@ figure {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .footer-shell {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .site-nav {
         position: absolute;
         top: calc(100% + 0.75rem);
@@ -761,8 +816,18 @@ figure {
         padding: 1.4rem;
     }
 
-    .footer-row {
+    .footer-shell {
         grid-template-columns: 1fr;
+        gap: 1.4rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-credit {
+        text-align: left;
     }
 }
 
