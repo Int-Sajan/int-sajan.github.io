@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">TV mounting illustration</title>
+  <desc id="desc">Stylized wall-mounted television with a bracket and orange accent details.</desc>
+  <defs>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#151515"/>
+      <stop offset="100%" stop-color="#303030"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff7f1"/>
+      <stop offset="100%" stop-color="#f1e4d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#wall)"/>
+  <circle cx="980" cy="160" r="170" fill="#ffe0cc" opacity="0.8"/>
+  <circle cx="170" cy="640" r="220" fill="#111111" opacity="0.05"/>
+  <rect x="170" y="160" width="860" height="480" rx="40" fill="#ffffff" stroke="#edd6c5" stroke-width="8"/>
+  <rect x="300" y="250" width="600" height="320" rx="26" fill="url(#screen)"/>
+  <rect x="325" y="275" width="550" height="270" rx="18" fill="#222222"/>
+  <path d="M350 510c80-85 172-134 290-155 90-16 176-12 250 15v175H350z" fill="#2f3133"/>
+  <rect x="570" y="578" width="60" height="18" rx="9" fill="#f06a22"/>
+  <rect x="535" y="178" width="130" height="54" rx="20" fill="#111111"/>
+  <rect x="585" y="205" width="30" height="65" rx="14" fill="#111111"/>
+  <rect x="548" y="216" width="104" height="22" rx="11" fill="#f06a22"/>
+  <rect x="445" y="610" width="310" height="16" rx="8" fill="#111111" opacity="0.14"/>
+  <path d="M933 255l82-54" stroke="#111111" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="1028" cy="191" r="18" fill="#f06a22"/>
+</svg>

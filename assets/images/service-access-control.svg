@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Access control illustration</title>
+  <desc id="desc">Stylized access control panel beside a secured doorway in black, white, and orange.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#2b2b2b"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff8d47"/>
+      <stop offset="100%" stop-color="#f06a22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#f7efe8"/>
+  <circle cx="975" cy="120" r="170" fill="#ffe3d0" opacity="0.8"/>
+  <circle cx="170" cy="650" r="210" fill="#1c1c1c" opacity="0.06"/>
+  <rect x="180" y="120" width="530" height="560" rx="34" fill="url(#bg)"/>
+  <rect x="240" y="180" width="250" height="440" rx="24" fill="#111111" stroke="#404040"/>
+  <rect x="520" y="205" width="125" height="215" rx="22" fill="#ffffff" stroke="#f0d9c9" stroke-width="8"/>
+  <rect x="555" y="245" width="56" height="56" rx="12" fill="#111111"/>
+  <rect x="545" y="460" width="75" height="18" rx="9" fill="#f06a22"/>
+  <circle cx="583" cy="518" r="14" fill="#f06a22"/>
+  <rect x="785" y="168" width="200" height="360" rx="30" fill="#ffffff" stroke="#efcfbb" stroke-width="10"/>
+  <rect x="832" y="220" width="108" height="108" rx="18" fill="#111111"/>
+  <g fill="#f06a22">
+    <circle cx="842" cy="380" r="11"/>
+    <circle cx="892" cy="380" r="11"/>
+    <circle cx="942" cy="380" r="11"/>
+    <circle cx="842" cy="430" r="11"/>
+    <circle cx="892" cy="430" r="11"/>
+    <circle cx="942" cy="430" r="11"/>
+  </g>
+  <rect x="820" y="562" width="130" height="16" rx="8" fill="#111111" opacity="0.16"/>
+  <path d="M370 400c0-71 58-129 129-129s129 58 129 129" fill="none" stroke="url(#glow)" stroke-width="18" stroke-linecap="round"/>
+  <rect x="430" y="392" width="128" height="144" rx="28" fill="#f06a22"/>
+  <circle cx="494" cy="453" r="18" fill="#ffffff" opacity="0.95"/>
+  <rect x="488" y="468" width="12" height="34" rx="6" fill="#ffffff" opacity="0.95"/>
+</svg>
