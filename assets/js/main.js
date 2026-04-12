@@ -15,34 +15,20 @@ const getPreferredTheme = () => {
 
 const applyTheme = (theme) => {
     document.body.dataset.theme = theme;
-
-    const logoImg = document.querySelector('.brand img');
-    if (logoImg) {
-        const src = theme === 'dark'
-            ? logoImg.getAttribute('data-dark-src')
-            : logoImg.getAttribute('data-light-src');
-        if (src) logoImg.src = src;
-    }
 };
 
 const updateThemeToggle = (toggleButton, theme) => {
     const nextTheme = theme === 'dark' ? 'light' : 'dark';
-    const label = nextTheme === 'dark' ? 'Dark mode' : 'Light mode';
-    const icon = nextTheme === 'dark' ? 'D' : 'L';
+    const icon = theme === 'dark' ? '☀️' : '🌙';
+    const label = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
 
-    toggleButton.setAttribute('aria-label', `Switch to ${label.toLowerCase()}`);
-    toggleButton.setAttribute('title', `Switch to ${label.toLowerCase()}`);
+    toggleButton.setAttribute('aria-label', label);
+    toggleButton.setAttribute('title', label);
     toggleButton.setAttribute('data-theme-target', nextTheme);
 
     const iconTarget = toggleButton.querySelector('.theme-toggle-icon');
-    const textTarget = toggleButton.querySelector('.theme-toggle-text');
-
     if (iconTarget) {
         iconTarget.textContent = icon;
-    }
-
-    if (textTarget) {
-        textTarget.textContent = label;
     }
 };
 
@@ -51,7 +37,7 @@ const createThemeToggle = () => {
 
     toggleButton.type = 'button';
     toggleButton.className = 'theme-toggle';
-    toggleButton.innerHTML = '<span class="theme-toggle-icon" aria-hidden="true"></span><span class="theme-toggle-text"></span>';
+    toggleButton.innerHTML = '<span class="theme-toggle-icon" aria-hidden="true"></span>';
 
     const syncTheme = (theme, persist = true) => {
         applyTheme(theme);
